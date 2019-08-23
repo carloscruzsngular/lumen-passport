@@ -47,7 +47,7 @@ class AccessTokenController extends \Laravel\Passport\Http\Controllers\AccessTok
             if ($token->client->firstParty() && LumenPassport::$allowMultipleTokens) {
                 // We keep previous tokens for password clients
             } else {
-                $this->revokeOrDeleteAccessTokens($token, $tokenId);
+                //$this->revokeOrDeleteAccessTokens($token, $tokenId);
             }
         }
 
